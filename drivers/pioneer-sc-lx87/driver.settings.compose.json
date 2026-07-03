@@ -25,5 +25,132 @@
       "nl": "Timeout in ms"
     },
     "value": 2000
+  },
+
+  {
+    "id": "alias_cd",
+    "type": "text",
+    "label": {
+      "en": "CD display name",
+      "nl": "Weergavenaam CD"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_tv_sat",
+    "type": "text",
+    "label": {
+      "en": "TV/SAT display name",
+      "nl": "Weergavenaam TV/SAT"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_video1",
+    "type": "text",
+    "label": {
+      "en": "VIDEO1 display name",
+      "nl": "Weergavenaam VIDEO1"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_video2",
+    "type": "text",
+    "label": {
+      "en": "VIDEO2 display name",
+      "nl": "Weergavenaam VIDEO2"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_dvr_bdr",
+    "type": "text",
+    "label": {
+      "en": "DVR/BDR display name",
+      "nl": "Weergavenaam DVR/BDR"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_usb",
+    "type": "text",
+    "label": {
+      "en": "USB display name",
+      "nl": "Weergavenaam USB"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi1",
+    "type": "text",
+    "label": {
+      "en": "HDMI1 display name",
+      "nl": "Weergavenaam HDMI1"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi2",
+    "type": "text",
+    "label": {
+      "en": "HDMI2 display name",
+      "nl": "Weergavenaam HDMI2"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi3",
+    "type": "text",
+    "label": {
+      "en": "HDMI3 display name",
+      "nl": "Weergavenaam HDMI3"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi4",
+    "type": "text",
+    "label": {
+      "en": "HDMI4 display name",
+      "nl": "Weergavenaam HDMI4"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi5",
+    "type": "text",
+    "label": {
+      "en": "HDMI5 display name",
+      "nl": "Weergavenaam HDMI5"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_hdmi6",
+    "type": "text",
+    "label": {
+      "en": "HDMI6 display name",
+      "nl": "Weergavenaam HDMI6"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_bd_dvd",
+    "type": "text",
+    "label": {
+      "en": "BD/DVD display name",
+      "nl": "Weergavenaam BD/DVD"
+    },
+    "value": ""
+  },
+  {
+    "id": "alias_network",
+    "type": "text",
+    "label": {
+      "en": "NETWORK display name",
+      "nl": "Weergavenaam NETWORK"
+    },
+    "value": ""
   }
 ]
