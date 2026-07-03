@@ -1,0 +1,27 @@
+<script type="text/javascript">
+Homey.setTitle('Pioneer SC-LX87 toevoegen');
+
+const device = {
+  name: 'Pioneer SC-LX87',
+  data: {
+    id: 'pioneer-sc-lx87'
+  },
+  settings: {
+    ip: '192.168.1.228',
+    port: 8102
+  }
+};
+
+function addDevice() {
+  Homey.createDevice(device, function(err) {
+    if (err) return Homey.alert(err.message || err);
+    Homey.done();
+  });
+}
+</script>
+
+<p>Voeg je Pioneer SC-LX87 toe aan Homey.</p>
+
+<button onclick="addDevice()" style="font-size:18px;padding:12px 20px;">
+  Pioneer SC-LX87 toevoegen
+</button>

@@ -1,0 +1,10 @@
+{
+  "title": {
+    "en": "Diagnose source",
+    "nl": "Diagnose bron"
+  },
+  "hint": {
+    "en": "Reads only the raw source response from the Pioneer receiver and sends it as a Homey notification.",
+    "nl": "Leest alleen het ruwe bron-antwoord van de Pioneer receiver uit en stuurt dit als Homey-melding."
+  }
+}

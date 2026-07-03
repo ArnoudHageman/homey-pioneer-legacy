@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ip",
+    "type": "text",
+    "label": {
+      "en": "IP address",
+      "nl": "IP-adres"
+    },
+    "value": "192.168.1.228"
+  },
+  {
+    "id": "port",
+    "type": "number",
+    "label": {
+      "en": "Telnet port",
+      "nl": "Telnetpoort"
+    },
+    "value": 8102
+  },
+  {
+    "id": "timeout",
+    "type": "number",
+    "label": {
+      "en": "Timeout in ms",
+      "nl": "Timeout in ms"
+    },
+    "value": 2000
+  }
+]

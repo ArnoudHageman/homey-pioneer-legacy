@@ -1,0 +1,32 @@
+{
+  "title": {
+    "en": "Select source",
+    "nl": "Kies bron"
+  },
+  "titleFormatted": {
+    "en": "Select source [[source]]",
+    "nl": "Kies bron [[source]]"
+  },
+  "args": [
+    {
+      "name": "source",
+      "type": "dropdown",
+      "values": [
+        { "id": "01FN", "label": { "en": "CD", "nl": "CD" } },
+        { "id": "25FN", "label": { "en": "BD/DVD", "nl": "BD/DVD" } },
+        { "id": "05FN", "label": { "en": "TV/SAT", "nl": "TV/SAT" } },
+        { "id": "10FN", "label": { "en": "VIDEO1", "nl": "VIDEO1" } },
+        { "id": "14FN", "label": { "en": "VIDEO2", "nl": "VIDEO2" } },
+        { "id": "15FN", "label": { "en": "DVR/BDR", "nl": "DVR/BDR" } },
+        { "id": "17FN", "label": { "en": "USB", "nl": "USB" } },
+        { "id": "19FN", "label": { "en": "HDMI 1", "nl": "HDMI 1" } },
+        { "id": "20FN", "label": { "en": "HDMI 2", "nl": "HDMI 2" } },
+        { "id": "21FN", "label": { "en": "HDMI 3", "nl": "HDMI 3" } },
+        { "id": "22FN", "label": { "en": "HDMI 4", "nl": "HDMI 4" } },
+        { "id": "23FN", "label": { "en": "HDMI 5", "nl": "HDMI 5" } },
+        { "id": "24FN", "label": { "en": "HDMI 6", "nl": "HDMI 6" } },
+        { "id": "26FN", "label": { "en": "NETWORK", "nl": "NETWORK" } }
+      ]
+    }
+  ]
+}

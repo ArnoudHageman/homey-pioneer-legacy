@@ -1,0 +1,10 @@
+{
+  "title": {
+    "en": "Synchronize status",
+    "nl": "Synchroniseer status"
+  },
+  "hint": {
+    "en": "Reads the current power, source and volume status from the Pioneer receiver and writes the answers to the log.",
+    "nl": "Leest de huidige aan/uit-status, bron en volume uit van de Pioneer receiver en schrijft de antwoorden naar de log."
+  }
+}

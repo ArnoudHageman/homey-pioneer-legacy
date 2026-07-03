@@ -1,0 +1,28 @@
+{
+  "title": {
+    "en": "Send debug command",
+    "nl": "Stuur debug-opdracht"
+  },
+  "titleFormatted": {
+    "en": "Send debug command [[command]]",
+    "nl": "Stuur debug-opdracht [[command]]"
+  },
+  "hint": {
+    "en": "Sends a custom raw Pioneer command and returns the response as a Homey notification.",
+    "nl": "Stuurt een ruwe Pioneer-opdracht en geeft het antwoord terug als Homey-melding."
+  },
+  "args": [
+    {
+      "name": "command",
+      "type": "text",
+      "title": {
+        "en": "Command",
+        "nl": "Opdracht"
+      },
+      "placeholder": {
+        "en": "?P",
+        "nl": "?P"
+      }
+    }
+  ]
+}

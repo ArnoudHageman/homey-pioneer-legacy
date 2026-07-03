@@ -1,0 +1,374 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "nl.hageman.pioneer.sc-lx87",
+  "version": "0.5.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Pioneer Legacy"
+  },
+  "description": {
+    "en": "Simple Homey integration for the Pioneer Legacy AV receiver with power, volume and input control."
+  },
+  "category": [
+    "appliances"
+  ],
+  "brandColor": "#000000",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "arnoud hageman",
+    "email": "a_hahaha@hotmail.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "title": {
+          "en": "Send debug command",
+          "nl": "Stuur debug-opdracht"
+        },
+        "titleFormatted": {
+          "en": "Send debug command [[command]]",
+          "nl": "Stuur debug-opdracht [[command]]"
+        },
+        "hint": {
+          "en": "Sends a custom raw Pioneer command and returns the response as a Homey notification.",
+          "nl": "Stuurt een ruwe Pioneer-opdracht en geeft het antwoord terug als Homey-melding."
+        },
+        "args": [
+          {
+            "name": "command",
+            "type": "text",
+            "title": {
+              "en": "Command",
+              "nl": "Opdracht"
+            },
+            "placeholder": {
+              "en": "?P",
+              "nl": "?P"
+            }
+          }
+        ],
+        "id": "debug_command"
+      },
+      {
+        "title": {
+          "en": "Diagnose source",
+          "nl": "Diagnose bron"
+        },
+        "hint": {
+          "en": "Reads only the raw source response from the Pioneer receiver and sends it as a Homey notification.",
+          "nl": "Leest alleen het ruwe bron-antwoord van de Pioneer receiver uit en stuurt dit als Homey-melding."
+        },
+        "id": "diagnose_source"
+      },
+      {
+        "title": {
+          "en": "Diagnose Pioneer",
+          "nl": "Diagnose Pioneer"
+        },
+        "hint": {
+          "en": "Reads raw Pioneer status responses and sends them as a Homey notification.",
+          "nl": "Leest ruwe Pioneer-statusantwoorden uit en stuurt ze als Homey-melding."
+        },
+        "id": "diagnose_status"
+      },
+      {
+        "title": {
+          "en": "Select listening mode",
+          "nl": "Selecteer luistermodus"
+        },
+        "titleFormatted": {
+          "en": "Select listening mode [[listening_mode]]",
+          "nl": "Selecteer luistermodus [[listening_mode]]"
+        },
+        "hint": {
+          "en": "Sets the listening mode of the Pioneer receiver.",
+          "nl": "Stelt de luistermodus van de Pioneer-versterker in."
+        },
+        "args": [
+          {
+            "name": "listening_mode",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "Stereo",
+                "label": {
+                  "en": "Stereo",
+                  "nl": "Stereo"
+                }
+              },
+              {
+                "id": "Auto Surround",
+                "label": {
+                  "en": "Auto Surround",
+                  "nl": "Auto Surround"
+                }
+              },
+              {
+                "id": "Direct",
+                "label": {
+                  "en": "Direct",
+                  "nl": "Direct"
+                }
+              },
+              {
+                "id": "Pure Direct",
+                "label": {
+                  "en": "Pure Direct",
+                  "nl": "Pure Direct"
+                }
+              },
+              {
+                "id": "Dolby PLIIx Movie",
+                "label": {
+                  "en": "Dolby PLIIx Movie",
+                  "nl": "Dolby PLIIx Movie"
+                }
+              },
+              {
+                "id": "THX",
+                "label": {
+                  "en": "THX",
+                  "nl": "THX"
+                }
+              },
+              {
+                "id": "Auto Level Control (ALC)",
+                "label": {
+                  "en": "Auto Level Control (ALC)",
+                  "nl": "Auto Level Control (ALC)"
+                }
+              },
+              {
+                "id": "Optimum Surround",
+                "label": {
+                  "en": "Optimum Surround",
+                  "nl": "Optimum Surround"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "select_listening_mode"
+      },
+      {
+        "title": {
+          "en": "Select source",
+          "nl": "Kies bron"
+        },
+        "titleFormatted": {
+          "en": "Select source [[source]]",
+          "nl": "Kies bron [[source]]"
+        },
+        "args": [
+          {
+            "name": "source",
+            "type": "dropdown",
+            "values": [
+              {
+                "id": "01FN",
+                "label": {
+                  "en": "CD",
+                  "nl": "CD"
+                }
+              },
+              {
+                "id": "25FN",
+                "label": {
+                  "en": "BD/DVD",
+                  "nl": "BD/DVD"
+                }
+              },
+              {
+                "id": "05FN",
+                "label": {
+                  "en": "TV/SAT",
+                  "nl": "TV/SAT"
+                }
+              },
+              {
+                "id": "10FN",
+                "label": {
+                  "en": "VIDEO1",
+                  "nl": "VIDEO1"
+                }
+              },
+              {
+                "id": "14FN",
+                "label": {
+                  "en": "VIDEO2",
+                  "nl": "VIDEO2"
+                }
+              },
+              {
+                "id": "15FN",
+                "label": {
+                  "en": "DVR/BDR",
+                  "nl": "DVR/BDR"
+                }
+              },
+              {
+                "id": "17FN",
+                "label": {
+                  "en": "USB",
+                  "nl": "USB"
+                }
+              },
+              {
+                "id": "19FN",
+                "label": {
+                  "en": "HDMI 1",
+                  "nl": "HDMI 1"
+                }
+              },
+              {
+                "id": "20FN",
+                "label": {
+                  "en": "HDMI 2",
+                  "nl": "HDMI 2"
+                }
+              },
+              {
+                "id": "21FN",
+                "label": {
+                  "en": "HDMI 3",
+                  "nl": "HDMI 3"
+                }
+              },
+              {
+                "id": "22FN",
+                "label": {
+                  "en": "HDMI 4",
+                  "nl": "HDMI 4"
+                }
+              },
+              {
+                "id": "23FN",
+                "label": {
+                  "en": "HDMI 5",
+                  "nl": "HDMI 5"
+                }
+              },
+              {
+                "id": "24FN",
+                "label": {
+                  "en": "HDMI 6",
+                  "nl": "HDMI 6"
+                }
+              },
+              {
+                "id": "26FN",
+                "label": {
+                  "en": "NETWORK",
+                  "nl": "NETWORK"
+                }
+              }
+            ]
+          }
+        ],
+        "id": "select_source"
+      },
+      {
+        "title": {
+          "en": "Set volume in dB",
+          "nl": "Zet volume in dB"
+        },
+        "titleFormatted": {
+          "en": "Set volume to [[volume_db]] dB",
+          "nl": "Zet volume op [[volume_db]] dB"
+        },
+        "args": [
+          {
+            "name": "volume_db",
+            "type": "number",
+            "min": -80,
+            "max": 12,
+            "step": 0.5,
+            "placeholder": -35
+          }
+        ],
+        "id": "set_volume_db"
+      },
+      {
+        "title": {
+          "en": "Synchronize status",
+          "nl": "Synchroniseer status"
+        },
+        "hint": {
+          "en": "Reads the current power, source and volume status from the Pioneer receiver and writes the answers to the log.",
+          "nl": "Leest de huidige aan/uit-status, bron en volume uit van de Pioneer receiver en schrijft de antwoorden naar de log."
+        },
+        "id": "sync_status"
+      }
+    ]
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "Pioneer Legacy"
+      },
+      "class": "amplifier",
+      "capabilities": [
+        "onoff",
+        "volume_mute",
+        "volume_down",
+        "volume_up"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "lan"
+      ],
+      "pair": [
+        {
+          "id": "list_devices"
+        }
+      ],
+      "images": {
+        "small": "/drivers/pioneer-sc-lx87/assets/images/small.png",
+        "large": "/drivers/pioneer-sc-lx87/assets/images/large.png",
+        "xlarge": "/drivers/pioneer-sc-lx87/assets/images/xlarge.png"
+      },
+      "id": "pioneer-sc-lx87",
+      "settings": [
+        {
+          "id": "ip",
+          "type": "text",
+          "label": {
+            "en": "IP address",
+            "nl": "IP-adres"
+          },
+          "value": "192.168.1.228"
+        },
+        {
+          "id": "port",
+          "type": "number",
+          "label": {
+            "en": "Telnet port",
+            "nl": "Telnetpoort"
+          },
+          "value": 8102
+        },
+        {
+          "id": "timeout",
+          "type": "number",
+          "label": {
+            "en": "Timeout in ms",
+            "nl": "Timeout in ms"
+          },
+          "value": 2000
+        }
+      ]
+    }
+  ]
+}

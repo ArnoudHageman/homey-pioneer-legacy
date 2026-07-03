@@ -1,0 +1,114 @@
+{
+  "id": "nl.hageman.pioneer.sc-lx87",
+  "version": "0.5.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "runtime": "nodejs",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "Pioneer Legacy"
+  },
+  "description": {
+    "en": "Simple Homey integration for the Pioneer Legacy AV receiver with power, volume and input control."
+  },
+  "category": [
+    "appliances"
+  ],
+  "brandColor": "#000000",
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "arnoud hageman",
+    "email": "a_hahaha@hotmail.com"
+  },
+  "flow": {
+    "actions": [
+      {
+        "id": "select_listening_mode",
+        "title": {
+          "en": "Select listening mode",
+          "nl": "Selecteer luistermodus"
+        },
+        "hint": {
+          "en": "Selects a listening mode on the Pioneer receiver.",
+          "nl": "Selecteert een luistermodus op de Pioneer-versterker."
+        },
+        "args": [
+          {
+            "name": "device",
+            "type": "device",
+            "filter": "driver_id=pioneer-sc-lx87"
+          },
+          {
+            "name": "listening_mode",
+            "type": "autocomplete",
+            "values": [
+              {
+                "id": "Stereo",
+                "label": {
+                  "en": "Stereo",
+                  "nl": "Stereo"
+                }
+              },
+              {
+                "id": "Auto Surround",
+                "label": {
+                  "en": "Auto Surround",
+                  "nl": "Auto Surround"
+                }
+              },
+              {
+                "id": "Direct",
+                "label": {
+                  "en": "Direct",
+                  "nl": "Direct"
+                }
+              },
+              {
+                "id": "Pure Direct",
+                "label": {
+                  "en": "Pure Direct",
+                  "nl": "Pure Direct"
+                }
+              },
+              {
+                "id": "Dolby PLIIx Movie",
+                "label": {
+                  "en": "Dolby PLIIx Movie",
+                  "nl": "Dolby PLIIx Movie"
+                }
+              },
+              {
+                "id": "THX",
+                "label": {
+                  "en": "THX",
+                  "nl": "THX"
+                }
+              },
+              {
+                "id": "Auto Level Control (ALC)",
+                "label": {
+                  "en": "Auto Level Control (ALC)",
+                  "nl": "Auto Level Control (ALC)"
+                }
+              },
+              {
+                "id": "Optimum Surround",
+                "label": {
+                  "en": "Optimum Surround",
+                  "nl": "Optimum Surround"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "title": {
+    "en": "Select listening mode",
+    "nl": "Selecteer luistermodus"
+  },
+  "titleFormatted": {
+    "en": "Select listening mode [[listening_mode]]",
+    "nl": "Selecteer luistermodus [[listening_mode]]"
+  },
+  "hint": {
+    "en": "Sets the listening mode of the Pioneer receiver.",
+    "nl": "Stelt de luistermodus van de Pioneer-versterker in."
+  },
+  "args": [
+    {
+      "name": "listening_mode",
+      "type": "dropdown",
+      "values": [
+        { "id": "Stereo", "label": { "en": "Stereo", "nl": "Stereo" } },
+        { "id": "Auto Surround", "label": { "en": "Auto Surround", "nl": "Auto Surround" } },
+        { "id": "Direct", "label": { "en": "Direct", "nl": "Direct" } },
+        { "id": "Pure Direct", "label": { "en": "Pure Direct", "nl": "Pure Direct" } },
+        { "id": "Dolby PLIIx Movie", "label": { "en": "Dolby PLIIx Movie", "nl": "Dolby PLIIx Movie" } },
+        { "id": "THX", "label": { "en": "THX", "nl": "THX" } },
+        { "id": "Auto Level Control (ALC)", "label": { "en": "Auto Level Control (ALC)", "nl": "Auto Level Control (ALC)" } },
+        { "id": "Optimum Surround", "label": { "en": "Optimum Surround", "nl": "Optimum Surround" } }
+      ]
+    }
+  ]
+}

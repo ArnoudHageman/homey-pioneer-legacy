@@ -1,0 +1,10 @@
+{
+  "title": {
+    "en": "Diagnose Pioneer",
+    "nl": "Diagnose Pioneer"
+  },
+  "hint": {
+    "en": "Reads raw Pioneer status responses and sends them as a Homey notification.",
+    "nl": "Leest ruwe Pioneer-statusantwoorden uit en stuurt ze als Homey-melding."
+  }
+}
